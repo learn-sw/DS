@@ -1,0 +1,23 @@
+problem1:
+
+Input:
+    items[] :     I1      I2      I3      I4 
+    weight[]:     1       3       4       5
+    value[]       1       4       5       7
+
+    W < max capacity of the bag>: 7kg
+
+output: 
+    Max_profit 
+
+
+
+
+technique to write recurssio code:
+
+
+input params and return values
+
+base condition: which is important
+
+choice diagram:
