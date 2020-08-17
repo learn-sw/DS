@@ -39,6 +39,6 @@ def mem_longest_len_lcs(s1, s2,n_size_s1, m_size_s2):
             m_arr[n_size_s1][m_size_s2] =  max(longest_len_lcs(s1, s2,  n_size_s1-1, m_size_s2) ,longest_len_lcs(s1, s2,n_size_s1,m_size_s2-1))
             return m_arr[n_size_s1][m_size_s2]
 
-s1 = "ab"
-s2 = "ef"          
+s1 = "aba"
+s2 = "ab"          
 print(mem_longest_len_lcs(s1, s2, len(s1), len(s2)))
