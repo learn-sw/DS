@@ -22,7 +22,7 @@ def dp_count_noof_subsets(arr, sum, size):
 
     print(dp_arr)
 
-    return dp_arr[size][sum]
+    return dp_arr[sum][size]
 arr = [2,3,5,6,8,10]
 sum = 10
 size = len(arr)
