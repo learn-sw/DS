@@ -19,7 +19,7 @@ def dp_len_longest_common_subsequence(x,y, n, m):
             else:
                 dp_arr[i][j] = max(dp_arr[i][j-1], dp_arr[i-1][j])
 
-    print(dp_arr)
+    # print(dp_arr)
     return dp_arr
 
 def dp_print_longest_common_substring(x,y, n, m):
@@ -39,6 +39,12 @@ def dp_print_longest_common_substring(x,y, n, m):
 
 s1 = "abcdxyz"
 s2 = "zyabcd"
+
+print(dp_print_longest_common_substring(s1, s2, len(s1), len(s2)))
+
+
+s1 = "abacdfgdcaba"
+s2 = s1[::-1]
 
 print(dp_print_longest_common_substring(s1, s2, len(s1), len(s2)))
 
