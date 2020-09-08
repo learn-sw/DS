@@ -22,8 +22,8 @@ class Solution(object):
         list = []
         
         for num in nums:
-            
-            
+
+
             if len(list)==0 or num < list[-1]:
                 list.append(num)
             else:
