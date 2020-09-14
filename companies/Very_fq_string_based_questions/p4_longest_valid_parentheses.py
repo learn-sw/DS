@@ -1,64 +1,53 @@
-# Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
-
-# An input string is valid if:
-
-# Open brackets must be closed by the same type of brackets.
-# Open brackets must be closed in the correct order.
- 
+# Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
 
 # Example 1:
 
-# Input: s = "()"
-# Output: true
+# Input: "(()"
+# Output: 2
+# Explanation: The longest valid parentheses substring is "()"
 # Example 2:
 
-# Input: s = "()[]{}"
-# Output: true
-# Example 3:
+# Input: ")()())"
+# Output: 4
+# Explanation: The longest valid parentheses substring is "()()"
+# Amazon
+# |
+# 5
 
-# Input: s = "(]"
-# Output: false
-# Example 4:
+# Apple
+# |
+# 3
 
-# Input: s = "([)]"
-# Output: false
-# Example 5:
+# Uber
+# |
+# 2
 
-# Input: s = "{[]}"
-# Output: true
- 
-
-# Constraints:
-
-# 1 <= s.length <= 104
-# s consists of parentheses only '()[]{}'.
-
-# 0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
-# amazon 26 bloomberg 15 facebookm 10 microsoft 6 citadel 6 google 5 tesla 4 vmware 4 spotify 4 paypal 3 ebay 3 oracle 3 app;e 2
-# adobe 2 yahoo 2 lyft 2 intuit 2 linkedin 7 uber 6 expedia 3 barclays 3 servicenow 3 riot games 3 visa 3 ciscoo 3 sallesforce 3 ....
-
-
+# Citadel
+# |
+# 2
 
 class Solution(object):
-    def isValid(self, s):
+    def longestValidParentheses(self, s):
         """
         :type s: str
-        :rtype: bool
+        :rtype: int
         """
-
-        valid_par = { 
-            ')':'(',
-            '}':'{',
-            ']':'['
-        }
-
-        temp_list = []
-        for char in s:
-
-            if char in valid_par:
-                top_ele = temp_list.pop(char)
-                if top_ele != valid_par.get(top_ele)
-                    return false
+        result = 0
+        curr_longest = 0 
+        
+        t_stack = []
+        result = 0
+        for index in range(len(s)):
+            if s[index] == '(':
+                t_stack.append(curr_longest)
+                curr_longest = 0
             else:
-                temp_list.append(char)
-        return true
+                if t_stack:
+                    curr_longest += t_stack.pop() + 2
+                    result = max(result,curr_longest )
+                else:
+                    curr_longest = 0
+                
+                    
+        return result
+                
