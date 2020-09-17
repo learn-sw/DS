@@ -19,3 +19,4 @@
 # 1 <= A[i] <= 1000
 
 # https://leetcode.com/problems/best-sightseeing-pair/
+
