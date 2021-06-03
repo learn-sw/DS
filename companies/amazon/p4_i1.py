@@ -18,6 +18,23 @@ import sys
 #
 
 def foo(flightDuration, movieDuration):
+    target_movies_duration = flightDuration - 30
+    movies_duration = {}
+
+    for index in range(len(movieDuration)):
+        diff = target_movies_duration - movieDuration[index]
+
+        if diff in movies_duration:
+            return [movies_duration[diff],index]
+        else:
+            movies_duration[diff] = index
+
+
+
+
+
+
+def foo(flightDuration, movieDuration):
     # Write your code here
     if not flightDuration or not movieDuration or flightDuration<30:
         return []

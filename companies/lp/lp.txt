@@ -1,0 +1,73 @@
+# leadership principal's
+
+# STAR Method
+
+s - situation
+T - Task
+A - Action
+R - Result
+
+
+
+Q1. Tell me about atime where you faced with a problem that had a number of possible solutions?
+what was the problem and how did you determine the course of action?
+what was the outcome of that choice?
+
+
+
+Q2. went against the team and proved right?
+
+    SENARIO 1:
+        SITUATION: WE WANTED TO UPGRADED THE PRODUCT 
+            bw 6.6.0 
+            bw 6.3.5 
+
+            DISCUSSED WITH ABOUT PRO'S AND CONS AFTER TAKING BW 6.6
+            TEAM WASN'T HAPPY WITH UPGRADING THE PRODUCT TO TJE LATEST VERSION.
+            I WENT AGAINST THEM AND ASKED FOR SOMETIME TO TALK WOTH TIBCO SUPPORT. AND PUSHED THEM HARD 
+            TO GIVE ME A HOTFIX TO RESZOLVE THE DEFECTS.
+            I MEAN TIME I WROTE AUTOMATED THE TESTING PROCESS TO THE VALIDATE THE NEW FEATURES.
+            automation testing
+
+
+    Senario 2: Terraform for Infrastruccture as code
+
+
+    SENARIO 2: Be studio to Web studio 
+        
+    Senario 4: drools 
+
+    Senario 3:
+        we need to deploy 
+        monitoring tool: we used Tibco 
+
+
+Q3. went against the team and failed?
+
+
+
+
+
+Q4. Time when you took a risk and failed?
+
+    Senario: deadlines 
+        distrubuted cache <hazelcast and new relic products> and hep team. 
+        As it was initail phase i was voltunerd to deploy both the product. 
+
+        I felt lot of stress when working for the teams.
+
+        For distrubuted cach i was able to write automated test scripts using chef audits 
+
+        there was a scope for automation for some of the modules. were I ccouldn;t write. 
+        This was not part of the requirement. but this costed some time for manual testing. 
+        we did this work in next sprint.
+
+
+
+    failure: 
+
+
+
+
+Q3.RECENT PROBLEMS FOUND AND RESOLVED?
+
